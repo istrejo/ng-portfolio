@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/vela-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+/* Order */
+// @layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+/* Reset CSS */
+@layer reset {
+  button:focus {
+    box-shadow: none;
+  }
+}
